@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightblue;
+}
+
+.container {
+    width: 80%; /* Adjust width as needed */
+    max-height: 90vh; /* Adjust height as needed */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.todo-app {
+    width: 100%;
+}
+
+.todo-app h2 {
+    color: rgb(35, 35, 206);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+} 
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 50px;
+    margin: 2px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.table-container {
+    max-height: 300px;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+#table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table th, #table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#table th {
+    background-color: #f2f2f2;
+    color: black;
+    border-radius: 8px 0 0 8px;
+}
+
+#table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#table tr:hover {
+    background-color: #ddd;
+}
+
+#table td {
+    border-radius: 0 8px 8px 0;
+}

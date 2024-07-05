@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List Using Table Element</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-do List</h2>
+            <form id="form1">
+                <div class="row">
+                    <label for="taskno">Task No:</label>
+                    <input type="text" id="taskno" required>
+                </div>
+                <div class="row">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="row">
+                    <label for="description">Description:</label>
+                    <input type="text" id="description" required>
+                </div>
+                <div class="row">
+                    <label>Current image:</label>
+                    <img id="current-image" style="max-width: 100px;">
+                </div>
+                <div class="row">
+                    <label for="image1">Image:</label>
+                    <input type="file" id="image1" accept="image/*">
+                </div>
+                <div class="row">
+                    <button type="submit" id="add">Add</button>
+                    <button type="button" id="update" style="display: none;">Update</button>
+                </div>
+            </form>
+            <div class="search-wrapper">
+                <input type="text" id="search" placeholder="Search...">
+            </div>
+            <div class="table-container">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>Task No</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Image</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="pagination">
+                <button id="prev" disabled>Previous</button>
+                <span id="page-info"></span>
+                <button id="next" disabled>Next</button>
+            </div>
+        </div>
+    </div>
+    <script src="todolist.js"></script>
+</body>
+</html>
